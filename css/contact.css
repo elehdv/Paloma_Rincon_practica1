@@ -80,6 +80,35 @@ h4{
 .cuerpo-texto p{
     font-size: 13px;
 }
+
+/* FOOTER*/
+.footer-text {
+    position: relative;
+    overflow: hidden; /* Ocultar la parte que excede el contenedor */
+    height: 5rem; /* Ajustar la altura para que se recorte a la mitad */
+    display: flex;
+    align-items: center; /* Centrar el texto verticalmente */
+    justify-content: center; /* Centrar el texto horizontalmente */
+}
+.footer-text h1 {
+    margin-bottom: 0; /* Eliminar margen inferior del h1 */
+    font-size: 8rem;
+    font-family: 'Victor Serif', serif; /* Ajustar fuente */
+    margin-top: 2rem; /* Añadir margen superior para separarlo */
+}
+
+.boton_redes_footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Cambia el color al pasar el ratón (hover) */
+.btn-outline-light:hover {
+    background-color: #FFB257;    /* Fondo naranja claro */
+    color: white;                 /* Texto blanco */
+    border-color: #FFB257;        /* Borde naranja claro */
+}
 /* CONTACTO*/
 .contacto_titulo{
     font-family:'Victor Serif Italic';
