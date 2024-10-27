@@ -19,7 +19,68 @@ h4{
 *{
     font-family:'maison neue book';
 }
+/* SOBRE MI*/
 
+.btn-outline-black {
+    border-color: black;          /* Color de borde negro */
+    color: black;                 /* Texto negro */
+    border-radius: 2rem;
+}
+.imagen-perfil {
+    width: 100%;               /* Tamaño adaptable */
+    max-width: 250px;           /* Tamaño máximo de la imagen */
+    height: auto;               /* Mantener proporción */
+}
+
+/* Margen superior para separar los botones */
+.boton_redes {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Cambia el color al pasar el ratón (hover) */
+.btn-outline-black:hover {
+    background-color: #FFB257;    /* Fondo naranja claro */
+    color: white;                 /* Texto blanco */
+    border-color: #FFB257;        /* Borde naranja claro */
+}
+
+.ordenar{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+
+.bg-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.background-img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Centra la imagen horizontalmente */
+    width: calc(100% - 4rem);    /* Añade margen de 2rem a cada lado */
+    height: 100vh;            /* Aumenta la altura mínima */
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.25; /* Controla la opacidad */
+}
+
+.container, .texto-presentacion {
+    position: relative;
+    z-index: 2; /* Coloca el contenido sobre la imagen de fondo */
+}
+.alinear{
+    display: flex;
+    justify-content: space-around;
+}
+.cuerpo-texto p{
+    font-size: 13px;
+}
+/* CONTACTO*/
 .contacto_titulo{
     font-family:'Victor Serif Italic';
 }
