@@ -1,0 +1,66 @@
+@font-face {
+    src: url(fonts/victor-serif/victor-serif-regular.otf);
+    font-family:'Victor Serif';
+}
+
+@font-face {
+    src: url(fonts/victor-serif/victor-serif-regular-italic.otf);
+    font-family:'Victor Serif Italic';
+}
+@font-face {
+    src: url(fonts/fonnts.com-Maison_Neue_Book.ttf);
+    font-family:'maison neue book';
+}
+
+h1,
+h4{
+    font-family:'Victor Serif';
+}
+*{
+    font-family:'maison neue book';
+}
+
+.contacto_titulo{
+    font-family:'Victor Serif Italic';
+}
+
+.imagen-pantalla {
+    width: 100vw;            
+    height: 15vh;             
+    object-fit: cover;        
+    object-position: center;  
+}
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+    height: 15vh;          
+}
+
+
+.card-title{
+    font-family:'Victor Serif';
+}
+.card-subtitle{
+    font-family:'Victor Serif Italic';
+}
+.card-studio, .card-text{
+    font-family:'maison neue book';
+}
+.card-text p,
+.card-text a{
+    margin-bottom: 0;
+    margin-left: 2rem;
+}
+.card-studio{
+    margin-top:1rem;
+}
+
+.card {
+    border-radius: 2em;
+
+}
+
+
+
+
