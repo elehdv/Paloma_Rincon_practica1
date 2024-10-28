@@ -1,0 +1,15 @@
+#PalomaRinconHome {
+    background-color: aqua;
+}
+
+#carousel-frame {
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+}
+
+#carouselExampleSlidesOnly {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
