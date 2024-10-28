@@ -13,7 +13,9 @@
 }
 
 h1,
-h4{
+h2,
+h4,
+h3{
     font-family:'Victor Serif';
 }
 *{
@@ -81,34 +83,7 @@ h4{
     font-size: 13px;
 }
 
-/* FOOTER*/
-.footer-text {
-    position: relative;
-    overflow: hidden; /* Ocultar la parte que excede el contenedor */
-    height: 5rem; /* Ajustar la altura para que se recorte a la mitad */
-    display: flex;
-    align-items: center; /* Centrar el texto verticalmente */
-    justify-content: center; /* Centrar el texto horizontalmente */
-}
-.footer-text h1 {
-    margin-bottom: 0; /* Eliminar margen inferior del h1 */
-    font-size: 8rem;
-    font-family: 'Victor Serif', serif; /* Ajustar fuente */
-    margin-top: 2rem; /* Añadir margen superior para separarlo */
-}
 
-.boton_redes_footer {
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-/* Cambia el color al pasar el ratón (hover) */
-.btn-outline-light:hover {
-    background-color: #FFB257;    /* Fondo naranja claro */
-    color: white;                 /* Texto blanco */
-    border-color: #FFB257;        /* Borde naranja claro */
-}
 /* CONTACTO*/
 .contacto_titulo{
     font-family:'Victor Serif Italic';
@@ -152,5 +127,54 @@ h4{
 }
 
 
+/* FOOTER*/
+.footer-text {
+    position: relative;
+    overflow: hidden; /* Ocultar la parte que excede el contenedor */
+    height: 5rem; /* Ajustar la altura para que se recorte a la mitad */
+    display: flex;
+    align-items: center; /* Centrar el texto verticalmente */
+    justify-content: center; /* Centrar el texto horizontalmente */
+}
+.footer-text h1 {
+    margin-bottom: 0; 
+    font-size: 10rem;
+    font-family: 'Victor Serif'; 
+    margin-top: 2rem; 
+}
 
+.secciones a {
+    font-size: 2rem;
+    font-family:'Victor Serif';
 
+}
+
+.boton_redes_footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 4rem;
+}
+
+.btn-outline-light {
+    border-radius: 2rem;
+}
+.btn-outline-light:hover {
+    background-color: #FFB257;   
+    color: white;                 
+    border-color: #FFB257;    
+}
+
+.text_findme h2{
+    line-height: 1.2;
+   font-size: 3rem;
+  
+}
+.text_findme img{
+    margin-top: 5rem;
+
+}
+.rights{
+    margin-bottom: 4rem;
+    font-size: smaller;
+}
