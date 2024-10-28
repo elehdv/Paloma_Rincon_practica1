@@ -1,15 +1,119 @@
+@font-face {
+    src: url(fonts/victor-serif/victor-serif-regular.otf);
+    font-family:'Victor Serif';
+}
+
+@font-face {
+    src: url(fonts/victor-serif/victor-serif-regular-italic.otf);
+    font-family:'Victor Serif Italic';
+}
+@font-face {
+    src: url(fonts/fonnts.com-Maison_Neue_Book.ttf);
+    font-family:'maison neue book';
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family:'maison neue book'
+}
+
 #PalomaRinconHome {
-    background-color: aqua;
+    height:100vh;
+    padding-left: 2em;
+    padding-right: 2em;
+    position: relative;
 }
 
 #carousel-frame {
     width: 100%;
-    height: 20px;
+    height:auto;
     overflow: hidden;
 }
 
 #carouselExampleSlidesOnly {
     width: 100%;
-    height: 100%;
+    height: 72vh;
     overflow: hidden;
+}
+
+#submenu {
+    height: 3.2em;
+}
+
+
+#presentation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+#presentation > h1 {
+    font-size: 120px;
+    font-family:'Victor Serif';
+    width:fit-content;
+}
+
+#presentation > p {
+    width: 40%;
+    padding-top: 2em;
+    font-size: 19px;
+}
+
+#menu {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    
+}
+
+#menu > ul > li > a > figure {
+    padding-top:15px;
+}
+
+#menu > ul > li {
+    list-style: none;
+}
+
+#menu > ul {
+    width:100%;
+    padding-left:0em;
+    top: 0;
+}
+
+#white {
+    background-color: white;
+    width:100%;
+    height: 2em;
+    padding-top: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#white-gradient {
+    width: 100%;
+    height: 20px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 8%, rgba(255,255,255,0) 100%);
+}
+
+#submenu-2 {
+    display: flex;
+    width:100%;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1000;
+    position: absolute;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#submenu-2 > h5 {
+    font-size: 20px;
+    padding-top: 2vh;
+    padding-bottom: 1vh;
 }
