@@ -131,9 +131,11 @@
 /*Página introducción a proyectos*/
 
 #projects-intro {
-    height:100vh;
+
     padding-left: 2em;
     padding-right: 2em;
+    display:flex;
+    flex-direction: column;
 }
 
 #projects-intro-title {
@@ -153,8 +155,28 @@
     text-align: center;
 }
 
+#project-guide-explanation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: flex-end;
+    padding-top:15vh;
 
-/*Flecha que sube y baja*/
+}
+
+#project-guide-explanation > p {
+    font-size: 17px;
+    color: #FF5CE4 ;
+    width: 15%;
+    text-align: right;
+    padding-right:2vh;
+}
+
+
+
+
+/*Flecha que sube y baja 128px*/
 
 @-webkit-keyframes bounce-arrow {
     0%{
@@ -209,4 +231,80 @@
 
 
 
-  /*Proyecto 1 - Genus*/
+/*Proyectos*/
+#projects {
+    min-height:100vh;
+    padding-left: 2em;
+    padding-right: 2em;
+    display:flex;
+    flex-direction: column;
+}
+
+/*Guía de Proyectos*/
+
+#projects-guide {
+    display: flex;
+    justify-self: flex-end;
+    align-self: flex-end;
+    position: sticky;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2147483647;
+}
+
+#projects-guide > div {
+    background-color: #FF5CE4;
+    width: 128px;
+    height:128px;
+    border-radius: 100px;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+
+#projects-guide > div > a > h5 { 
+    font-size: 18px;
+    padding-top:12px;
+}
+
+/*Proyecto 1 - Genus*/
+
+#project-text {
+    display: flex;
+    flex-direction: column;
+}
+
+#project-chips {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+}
+
+#project-chips > h6 {
+    padding-top:1.5vh;
+    padding-bottom:1.5vh;
+    padding-left:2vh;
+    padding-right:2vh;
+    background-color: #F6F6F6;
+    border-radius: 100px;
+    margin-left:2vh;
+}
+
+#project-text > h2 {
+    font-size: 86px;
+    font-family:'Victor Serif';
+}
+
+#project-title-border {
+    border-bottom: 1.5px solid;
+    margin-bottom: 2vh;
+}
+
+#project-1 {
+    padding-top:30vh;
+}
+
