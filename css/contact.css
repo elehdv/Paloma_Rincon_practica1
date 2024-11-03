@@ -1,59 +1,56 @@
 @font-face {
     src: url(fonts/victor-serif/victor-serif-regular.otf);
-    font-family:'Victor Serif';
+    font-family: 'Victor Serif';
 }
 
 @font-face {
     src: url(fonts/victor-serif/victor-serif-regular-italic.otf);
-    font-family:'Victor Serif Italic';
+    font-family: 'Victor Serif Italic';
 }
 @font-face {
     src: url(fonts/fonnts.com-Maison_Neue_Book.ttf);
-    font-family:'maison neue book';
+    font-family: 'maison neue book';
 }
 
 h1,
 h2,
-h4,
-h3{
-    font-family:'Victor Serif';
+h3,
+h4 {
+    font-family: 'Victor Serif';
 }
-*{
-    font-family:'maison neue book';
-}
-/* SOBRE MI*/
 
+* {
+    font-family: 'maison neue book'; /* Puede que necesites revisar este selector */
+}
+
+/* Estilos de botones */
 .btn-outline-black {
-    border-color: black;          /* Color de borde negro */
-    color: black;                 /* Texto negro */
+    border-color: black;          
+    color: black;                 
     border-radius: 2rem;
 }
-.imagen-perfil {
-    width: 100%;               /* Tamaño adaptable */
-    max-width: 250px;           /* Tamaño máximo de la imagen */
-    height: auto;               /* Mantener proporción */
+
+.btn-outline-black:hover {
+    background-color: #FFB257;    
+    color: white;                 
+    border-color: #FFB257;        
 }
 
-/* Margen superior para separar los botones */
+/* Imagen de perfil */
+.imagen-perfil {
+    width: 100%;               
+    max-width: 250px;           
+    height: auto;               
+}
+
+/* Botones de redes */
 .boton_redes {
     margin-top: 10px;
     display: flex;
     justify-content: space-evenly;
 }
 
-/* Cambia el color al pasar el ratón (hover) */
-.btn-outline-black:hover {
-    background-color: #FFB257;    /* Fondo naranja claro */
-    color: white;                 /* Texto blanco */
-    border-color: #FFB257;        /* Borde naranja claro */
-}
-
-.ordenar{
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 2rem;
-}
-
+/* Contenedor de fondo */
 .bg-container {
     position: relative;
     overflow: hidden;
@@ -63,30 +60,27 @@ h3{
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translateX(-50%); /* Centra la imagen horizontalmente */
-    width: calc(100% - 4rem);    /* Añade margen de 2rem a cada lado */
-    height: 100vh;            /* Aumenta la altura mínima */
+    transform: translateX(-50%); 
+    width: calc(100% - 4rem);    
+    height: 100vh;            
     object-fit: cover;
     z-index: 1;
-    opacity: 0.25; /* Controla la opacidad */
+    opacity: 0.25; 
 }
 
+/* Texto de presentación */
 .container, .texto-presentacion {
     position: relative;
-    z-index: 2; /* Coloca el contenido sobre la imagen de fondo */
+    z-index: 2; 
 }
-.alinear{
-    display: flex;
-    justify-content: space-around;
-}
-.cuerpo-texto p{
+
+.cuerpo-texto p {
     font-size: 13px;
 }
 
-
-/* CONTACTO*/
-.contacto_titulo{
-    font-family:'Victor Serif Italic';
+/* Contacto */
+.contacto_titulo {
+    font-family: 'Victor Serif Italic';
 }
 
 .imagen-pantalla {
@@ -95,6 +89,7 @@ h3{
     object-fit: cover;        
     object-position: center;  
 }
+
 .img-container {
     display: flex;
     justify-content: center;
@@ -102,40 +97,57 @@ h3{
     height: 15vh;          
 }
 
+/* Estilos de tarjetas */
+.card {
+    border-radius: 2em;
+    margin-bottom: 1.5rem; /* Asegúrate de que esto esté presente para espaciado */
+}
 
-.card-title{
-    font-family:'Victor Serif';
+.card-title {
+    font-family: 'Victor Serif';
 }
-.card-subtitle{
-    font-family:'Victor Serif Italic';
+
+.card-subtitle {
+    font-family: 'Victor Serif Italic';
 }
-.card-studio, .card-text{
-    font-family:'maison neue book';
+
+.card-studio, .card-text {
+    font-family: 'maison neue book';
 }
+
 .card-text p,
-.card-text a{
+.card-text a {
     margin-bottom: 0;
     margin-left: 2rem;
 }
-.card-studio{
-    margin-top:1rem;
+
+.card-studio {
+    margin-top: 1rem;
 }
 
-.card {
-    border-radius: 2em;
-
+/* Footer */
+.secciones a {
+    font-size: 2rem;
+    font-family: 'Victor Serif';
 }
 
+footer .secciones li a {
+    transition: font-size 0.6s ease; 
+}
 
-/* FOOTER*/
+footer .secciones li.list-inline-item a:hover {
+    font-size: 2.3rem;
+}
+
 .footer-text {
     position: relative;
-    overflow: hidden; /* Ocultar la parte que excede el contenedor */
-    height: 5rem; /* Ajustar la altura para que se recorte a la mitad */
+    overflow: hidden; 
+    height: 5rem; 
     display: flex;
-    align-items: center; /* Centrar el texto verticalmente */
-    justify-content: center; /* Centrar el texto horizontalmente */
+    align-items: center; 
+    justify-content: center; 
 }
+
 .footer-text h1 {
     margin-bottom: 0; 
     font-size: 10rem;
@@ -143,12 +155,7 @@ h3{
     margin-top: 2rem; 
 }
 
-.secciones a {
-    font-size: 2rem;
-    font-family:'Victor Serif';
-
-}
-
+/* Botones de footer */
 .boton_redes_footer {
     margin-top: 10px;
     display: flex;
@@ -156,25 +163,103 @@ h3{
     border-radius: 4rem;
 }
 
+/* Estilos de botones adicionales */
 .btn-outline-light {
     border-radius: 2rem;
 }
+
 .btn-outline-light:hover {
     background-color: #FFB257;   
     color: white;                 
     border-color: #FFB257;    
+    transform: scale(1.1);
+    transition: transform 0.6s ease;
 }
 
-.text_findme h2{
+/* Sección de encontrarme */
+.text_findme h2 {
     line-height: 1.2;
-   font-size: 3rem;
-  
+    font-size: 3rem;
 }
-.text_findme img{
-    margin-top: 5rem;
 
+.text_findme img {
+    margin-top: 5rem;
 }
-.rights{
+
+.rights {
     margin-bottom: 4rem;
     font-size: smaller;
+}
+
+/* Media Queries */
+@media (min-width: 800px) and (max-width: 1020px) {
+    .footer-text h1 {  
+        font-size: 7rem;
+    }
+}
+
+@media (max-width: 800px) and (min-width:610px) {
+    .card-central{
+        display: none;
+       }
+    .footer-text h1 {
+        font-size: 5.5rem;
+    }
+}
+
+@media (max-width: 610px)and (min-width:480px) {
+    
+   .card-central{
+    display: none;
+   }
+    .footer-text h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-central{
+        display: none;
+       }
+
+    /* footer*/
+    
+    .secciones a {
+        font-size: 1.2rem;
+    }
+    .text_findme {
+        justify-content: center
+    }
+    .text_findme h2 {
+        font-size: 1.5rem;
+    }
+    footer .secciones li.list-inline-item a:hover {
+        font-size: 1.3rem;
+    }
+    .text_findme img {
+        margin-top: 2rem;
+        width: 8%;
+    }
+    .footer-text h1 {
+        font-size: 3.5rem;
+        margin-top: 3rem;
+    }
+    
+    .boton_redes_footer {
+        font-size: 0.5rem; 
+        margin-top: 10px; 
+    }
+
+    .btn-outline-light {
+        font-size: 0.7rem; 
+        padding: 0.4rem 0.8rem; 
+    }
+
+    .btn-outline-light:hover {
+        font-size: 0.8rem; 
+    }
+    
+    .rights {
+        font-size: x-small;
+    }
 }
