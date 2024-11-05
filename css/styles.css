@@ -310,6 +310,8 @@
 
 #project-1 {
     padding-top:30vh;
+    display: flex;
+    flex-direction: column;
 }
 
 #project-text > h4 {
@@ -343,4 +345,62 @@
     display: flex;
     width: 100%;
     height: 100%;
+}
+
+#project-1-2 {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+#genus-2-figure {
+    display: flex;
+    width: 45%;
+    height:fit-content;
+    margin-top:50px;
+    margin-left:5%;
+}
+
+#genus-2-figure > img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#genus-3-figure {
+    display: flex;
+    width: 35%;
+    height:fit-content;
+    margin-top:300px;
+    margin-left:8%;
+}
+
+#genus-3-figure > img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#project-1-3 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#genus-4-figure {
+    display: flex;
+    width: 48%;
+    height:fit-content;
+    margin-top:40px;
+    margin-right:25%;
+}
+
+#genus-4-figure > img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#project-2 {
+    margin-top: 20vh;
 }
