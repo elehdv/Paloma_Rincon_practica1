@@ -18,12 +18,22 @@ h3,
 h4 {
     font-family: 'Victor Serif';
 }
-
+body {
+    overflow-x: hidden;
+}
 * {
     font-family: 'maison neue book'; /* Puede que necesites revisar este selector */
+
+   
 }
 
 /* Estilos de botones */
+.boton_redes {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .btn-outline-black {
     border-color: black;          
     color: black;                 
@@ -33,7 +43,9 @@ h4 {
 .btn-outline-black:hover {
     background-color: #FFB257;    
     color: white;                 
-    border-color: #FFB257;        
+    border-color: #FFB257;    
+    transform: scale(1.1);
+    transition: transform 0.6s ease;    
 }
 
 /* Imagen de perfil */
@@ -43,12 +55,6 @@ h4 {
     height: auto;               
 }
 
-/* Botones de redes */
-.boton_redes {
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-evenly;
-}
 
 /* Contenedor de fondo */
 .bg-container {
@@ -62,7 +68,7 @@ h4 {
     left: 50%;
     transform: translateX(-50%); 
     width: calc(100% - 4rem);    
-    height: 100vh;            
+    height: 100%;            
     object-fit: cover;
     z-index: 1;
     opacity: 0.25; 
@@ -193,12 +199,38 @@ footer .secciones li.list-inline-item a:hover {
 
 /* Media Queries */
 @media (min-width: 800px) and (max-width: 1020px) {
+   
+    .conference{
+    justify-content: space-between;
+    }
+    .ordenar{
+        justify-content: space-evenly;
+    }
     .footer-text h1 {  
         font-size: 7rem;
     }
 }
 
 @media (max-width: 800px) and (min-width:610px) {
+    
+    /*sobre mi*/
+    .nombre{
+        margin-bottom: 1rem !important
+    }
+   
+    .ordenar{
+        justify-content: space-around;
+    }
+    .ordenar p{
+        font-size: 0.8rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        margin-top: 2rem;
+    }
+    .conference{
+        justify-content: space-between;
+        }
+    /*Contact*/
     .card-central{
         display: none;
        }
@@ -208,7 +240,20 @@ footer .secciones li.list-inline-item a:hover {
 }
 
 @media (max-width: 610px)and (min-width:480px) {
+     /*sobre mi*/
+     .nombre{
+        margin-bottom: 1rem !important
+    }
     
+    .ordenar{
+        justify-content: space-around;
+    }
+    .ordenar p{
+        font-size: 0.8rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        margin-top: 2rem;
+    }
    .card-central{
     display: none;
    }
@@ -218,9 +263,43 @@ footer .secciones li.list-inline-item a:hover {
 }
 
 @media (max-width: 480px) {
+    /*sobre mi*/
+    
+    .imagen-perfil {
+        width: 50%;
+    }
+    .nombre{
+        margin-bottom: 1rem !important
+    }
+   
+    .ordenar{
+        justify-content: space-around;
+    }
+    .ordenar p{
+        font-size: 0.8rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        margin-top: 2rem;
+    }
+    .boton_redes {
+        font-size: 0.5rem; 
+        margin-top: 10px; 
+    }
+    .btn-outline-black {
+        font-size: 0.7rem; 
+        padding: 0.4rem 0.8rem; 
+    }
+
+    .btn-outline-black:hover {
+        font-size: 0.8rem; 
+    }
+
+    /*Contacto*/
+
     .card-central{
         display: none;
        }
+
 
     /* footer*/
     
