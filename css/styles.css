@@ -401,6 +401,216 @@
     height: 100%;
 }
 
+
+
+
+
+/*Proyecto 2 - Mexico*/
+
 #project-2 {
     margin-top: 20vh;
+    padding-top:8vh;
+}
+
+#project-2-1 {
+    display: flex;
+    width:100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top:8vh;
+}
+
+#project-2-1 > figure {
+    display: flex;
+    width: 35%;
+    height:fit-content;
+    margin-top:60px;
+    margin-right:8%;
+}
+
+
+
+#project-2-1 > figure > img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#project-2-2 {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+#mexico-2-figure {
+    display: flex;
+    width: 35%;
+    height:fit-content;
+    margin-top:50px;
+    margin-left:5%;
+}
+
+#mexico-2-figure > img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#mexico-3-figure {
+    display: flex;
+    width: 50%;
+    height:fit-content;
+    margin-top:300px;
+    margin-left:5%;
+}
+
+#mexico-3-figure > img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#project-2-3 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#mexico-4-figure {
+    display: flex;
+    width: 60%;
+    height:fit-content;
+    margin-top:40px;
+    margin-right:25%;
+}
+
+#mexico-4-figure > img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#project-2-4 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#mexico-5-figure {
+    display: flex;
+    width: 60%;
+    height:fit-content;
+    margin-top:50px;
+    margin-left:30%;
+}
+
+#mexico-5-figure > img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*Proyecto 3 - Flow*/
+
+#project-3 {
+    margin-top: 20vh;
+    padding-top:8vh;
+}
+
+#project-3-1 {
+    display: flex;
+    width:100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top:8vh;
+}
+
+#project-3-1 > figure {
+    display: flex;
+    width: 40%;
+    height:fit-content;
+    margin-top:100px;
+    margin-right:3%;
+}
+
+#project-3-1 > figure > img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#project-3-2 {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+#flow-2-figure {
+    display: flex;
+    width: 30%;
+    height:fit-content;
+    margin-top:50px;
+    margin-left:5%;
+}
+
+#flow-2-figure > img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#flow-3-figure {
+    display: flex;
+    width: 50%;
+    height:fit-content;
+    margin-top:300px;
+    margin-left:5%;
+}
+
+#flow-3-figure > img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#project-3-3 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#flow-4-figure {
+    display: flex;
+    width: 70%;
+    height:fit-content;
+    margin-top:120px;
+    margin-right:20%;
+}
+
+#flow-4-figure > img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#project-3-4 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#flow-5-figure {
+    display: flex;
+    width: 60%;
+    height:fit-content;
+    margin-top:50px;
+    margin-left:30%;
+}
+
+#flow-5-figure > img {
+    display: flex;
+    width: 100%;
+    height: 100%;
 }
