@@ -11,6 +11,105 @@ $document.ready(function(){
 
   AOS.init();
 
+  $("#projects-guide > div > a").on("click", function(){
+    //console.log($("#projects-guide-open").css("display"));
+  
+      let actual_chevron = $("#projects-guide-open").css("display");
+  
+      if (actual_chevron === "none") {
+         $("#projects-guide-open").css("display", "flex");
+              
+      } else {
+        $("#projects-guide-open").css("display", "none");
+      }
+  
+  });
+
+  $("#project-menu-cross").on("click", function(){
+    //console.log($("#projects-guide-open").css("display"));
+  
+      let actual_chevron = $("#projects-guide-open").css("display");
+  
+      if (actual_chevron === "none") {
+         $("#projects-guide-open").css("display", "flex");
+              
+      } else {
+        $("#projects-guide-open").css("display", "none");
+      }
+  
+  });
+
+  $("#projects-guide-open > a").on("click", function(){
+    //console.log($("#projects-guide-open").css("display"));
+  
+      let actual_chevron = $("#projects-guide-open").css("display");
+  
+      if (actual_chevron === "none") {
+         $("#projects-guide-open").css("display", "flex");
+              
+      } else {
+        $("#projects-guide-open").css("display", "none");
+      }
+  
+  });
+
+  $("#close-main-menu").on("click", function(){
+    //console.log($("#projects-guide-open").css("display"));
+  
+      let actual_chevron = $("#menu-open").css("opacity");
+  
+      if (actual_chevron === "1") {
+         $("#menu-open").css("opacity", "0");
+              
+      } else {
+        $("#menu-open").css("opacity", "1");
+      }
+  
+  });
+
+  $("#close-main-menu").on("click", function(){
+    //console.log($("#projects-guide-open").css("display"));
+  
+      let actual_chevron = $("#menu-open").css("visibility");
+  
+      if (actual_chevron === "visible") {
+         $("#menu-open").css("visibility", "hidden");
+              
+      } else {
+        $("#menu-open").css("visibility", "visible");
+      }
+  
+  });
+
+  $("#main-menu").on("click", function(){
+    //console.log($("#projects-guide-open").css("display"));
+  
+      let actual_chevron = $("#menu-open").css("opacity");
+  
+      if (actual_chevron === "1") {
+         $("#menu-open").css("opacity", "0");
+              
+      } else {
+        $("#menu-open").css("opacity", "1");
+      }
+  
+  });
+
+  $("#main-menu").on("click", function(){
+    //console.log($("#projects-guide-open").css("display"));
+  
+      let actual_chevron = $("#menu-open").css("visibility");
+  
+      if (actual_chevron === "visible") {
+         $("#menu-open").css("visibility", "hidden");
+              
+      } else {
+        $("#menu-open").css("visibility", "visible");
+      }
+  
+  });
+
+
+
 
 });
-
