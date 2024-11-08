@@ -1034,3 +1034,332 @@
 
 
 
+
+/* Contact */
+
+.contacto_titulo {
+    font-family: 'Victor Serif Italic';
+}
+.contacto_sub_titulo{
+    font-family:'Victor Serif';
+}
+.imagen-pantalla {
+    width: 100vw;            
+    height: 15vh;             
+    object-fit: cover;        
+    object-position: center;  
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+    height: 15vh;          
+}
+
+
+.card {
+    border-radius: 2em;
+    margin-bottom: 1.5rem; 
+}
+
+.card-title {
+    font-family: 'Victor Serif';
+}
+
+.card-subtitle {
+    font-family: 'Victor Serif Italic';
+}
+
+.card-studio, .card-text {
+    font-family: 'maison neue book';
+}
+
+.card-text p,
+.card-text a {
+    margin-bottom: 0;
+    margin-left: 2rem;
+}
+
+.card-studio {
+    margin-top: 1rem;
+}
+
+/* About me */
+.nombre{
+    font-family: 'Victor Serif';
+}
+
+.boton_redes {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn-outline-black {
+    border-color: black;          
+    color: black;                 
+    border-radius: 2rem;
+}
+
+.btn-outline-black:hover {
+    background-color: #FFB257;    
+    color: white;                 
+    border-color: #FFB257;    
+    transform: scale(1.1);
+    transition: transform 0.6s ease;    
+}
+
+/* Imagen de perfil */
+.imagen-perfil {
+    width: 100%;               
+    max-width: 250px;           
+    height: auto;               
+}
+
+
+/* Contenedor de fondo */
+.bg-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.background-img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); 
+    width: calc(100% - 4rem);    
+    height: 100%;            
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.25; 
+}
+
+
+.container, .texto-presentacion {
+    overflow: hidden;
+    position: relative;
+    z-index: 2; 
+}
+
+.cuerpo-texto p {
+    font-size: 13px;
+}
+.title-section h4 {
+    font-family: 'Victor Serif';
+}
+
+
+
+/* Footer */
+
+.secciones a {
+    font-size: 2rem;
+    font-family: 'Victor Serif';
+}
+
+footer .secciones li a {
+    transition: font-size 0.6s ease; 
+}
+
+footer .secciones li.list-inline-item a:hover {
+    font-size: 2.3rem;
+}
+
+.footer-text {
+    position: relative;
+    overflow: hidden; 
+    height: 5rem; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.footer-text h1 {
+    margin-bottom: 0; 
+    font-size: 10rem;
+    font-family: 'Victor Serif'; 
+    margin-top: 2rem; 
+}
+
+/* Botones de footer */
+.boton_redes_footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 4rem;
+}
+
+.btn-outline-light {
+    border-radius: 2rem;
+}
+
+.btn-outline-light:hover {
+    background-color: #FFB257;   
+    color: white;                 
+    border-color: #FFB257;    
+    transform: scale(1.1);
+    transition: transform 0.6s ease;
+}
+
+.text_findme h2 {
+    line-height: 1.2;
+    font-size: 3rem;
+    font-family:'Victor Serif';
+}
+
+.text_findme img {
+    margin-top: 5rem;
+}
+
+.rights {
+    margin-bottom: 4rem;
+    font-size: smaller;
+}
+
+/* Media Queries */
+@media (min-width: 800px) and (max-width: 1020px) {
+   
+    .conference{
+    justify-content: space-between;
+    }
+    .ordenar{
+        justify-content: space-evenly;
+    }
+    .footer-text h1 {  
+        font-size: 7rem;
+    }
+}
+
+@media (max-width: 800px) and (min-width:610px) {
+    
+    /*sobre mi*/
+    .nombre{
+        margin-bottom: 1rem !important
+    }
+   
+    .ordenar{
+        justify-content: space-around;
+    }
+    .ordenar p{
+        font-size: 0.8rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        margin-top: 2rem;
+    }
+    .conference{
+        justify-content: space-between;
+        }
+    /*Contact*/
+    .card-central{
+        display: none;
+       }
+    .footer-text h1 {
+        font-size: 5.5rem;
+    }
+}
+
+@media (max-width: 610px)and (min-width:480px) {
+     /*sobre mi*/
+     .nombre{
+        margin-bottom: 1rem !important
+    }
+    
+    .ordenar{
+        justify-content: space-around;
+    }
+    .ordenar p{
+        font-size: 0.8rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        margin-top: 2rem;
+    }
+   .card-central{
+    display: none;
+   }
+    .footer-text h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /*sobre mi*/
+    
+    .imagen-perfil {
+        width: 50%;
+    }
+    .nombre{
+        margin-bottom: 1rem !important
+    }
+   
+    .ordenar{
+        justify-content: space-around;
+    }
+    .ordenar p{
+        font-size: 0.8rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        margin-top: 2rem;
+    }
+    .boton_redes {
+        font-size: 0.5rem; 
+        margin-top: 10px; 
+    }
+    .btn-outline-black {
+        font-size: 0.7rem; 
+        padding: 0.4rem 0.8rem; 
+    }
+
+    .btn-outline-black:hover {
+        font-size: 0.8rem; 
+    }
+
+    /*Contacto*/
+
+    .card-central{
+        display: none;
+       }
+
+
+    /* footer*/
+    
+    .secciones a {
+        font-size: 1.2rem;
+    }
+    .text_findme {
+        justify-content: center
+    }
+    .text_findme h2 {
+        font-size: 1.5rem;
+    }
+    footer .secciones li.list-inline-item a:hover {
+        font-size: 1.3rem;
+    }
+    .text_findme img {
+        margin-top: 2rem;
+        width: 8%;
+    }
+    .footer-text h1 {
+        font-size: 3.5rem;
+        margin-top: 3rem;
+    }
+    
+    .boton_redes_footer {
+        font-size: 0.5rem; 
+        margin-top: 10px; 
+    }
+
+    .btn-outline-light {
+        font-size: 0.7rem; 
+        padding: 0.4rem 0.8rem; 
+    }
+
+    .btn-outline-light:hover {
+        font-size: 0.8rem; 
+    }
+    
+    .rights {
+        font-size: x-small;
+    }
+}
