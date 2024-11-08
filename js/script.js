@@ -13,7 +13,6 @@ $document.ready(function(){
 
   $("#projects-guide > div > a").on("click", function(){
     //console.log($("#projects-guide-open").css("display"));
-    //console.log($(".fa-solid.fa-chevron-up").css("display"));
   
       let actual_chevron = $("#projects-guide-open").css("display");
   
@@ -28,7 +27,6 @@ $document.ready(function(){
 
   $("#project-menu-cross").on("click", function(){
     //console.log($("#projects-guide-open").css("display"));
-    //console.log($(".fa-solid.fa-chevron-up").css("display"));
   
       let actual_chevron = $("#projects-guide-open").css("display");
   
@@ -43,7 +41,6 @@ $document.ready(function(){
 
   $("#projects-guide-open > a").on("click", function(){
     //console.log($("#projects-guide-open").css("display"));
-    //console.log($(".fa-solid.fa-chevron-up").css("display"));
   
       let actual_chevron = $("#projects-guide-open").css("display");
   
@@ -56,7 +53,63 @@ $document.ready(function(){
   
   });
 
+  $("#close-main-menu").on("click", function(){
+    //console.log($("#projects-guide-open").css("display"));
+  
+      let actual_chevron = $("#menu-open").css("opacity");
+  
+      if (actual_chevron === "1") {
+         $("#menu-open").css("opacity", "0");
+              
+      } else {
+        $("#menu-open").css("opacity", "1");
+      }
+  
+  });
+
+  $("#close-main-menu").on("click", function(){
+    //console.log($("#projects-guide-open").css("display"));
+  
+      let actual_chevron = $("#menu-open").css("visibility");
+  
+      if (actual_chevron === "visible") {
+         $("#menu-open").css("visibility", "hidden");
+              
+      } else {
+        $("#menu-open").css("visibility", "visible");
+      }
+  
+  });
+
+  $("#main-menu").on("click", function(){
+    //console.log($("#projects-guide-open").css("display"));
+  
+      let actual_chevron = $("#menu-open").css("opacity");
+  
+      if (actual_chevron === "1") {
+         $("#menu-open").css("opacity", "0");
+              
+      } else {
+        $("#menu-open").css("opacity", "1");
+      }
+  
+  });
+
+  $("#main-menu").on("click", function(){
+    //console.log($("#projects-guide-open").css("display"));
+  
+      let actual_chevron = $("#menu-open").css("visibility");
+  
+      if (actual_chevron === "visible") {
+         $("#menu-open").css("visibility", "hidden");
+              
+      } else {
+        $("#menu-open").css("visibility", "visible");
+      }
+  
+  });
+
+
 
 
 });
-
