@@ -148,13 +148,13 @@
     visibility: hidden;
 }
 
-#menu-open:target {
-    opacity: 1;
-    visibility: visible;
-}
 
 #menu-open > ul > li > a > figure {
     padding-top:2vh;
+}
+
+#menu-open > ul > li > a {
+    cursor: pointer;
 }
 
 #menu-open > ul > li {
@@ -232,25 +232,28 @@
     border-color: rgb(24, 24, 24);
 }
 
-#menu-line {
+.menu-line {
     border-bottom: 0px;
     border-style: solid;
     border-color: rgba(255, 255, 255, 0.715);
 }
 
-#menu-text {
+.menu-text {
     display: flex;
     flex-direction:row;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgba(255, 255, 255);;
 }
 
-#menu-text > h6{
+.menu-text > h6{
     font-family:'Victor Serif';
     font-size:23px;
     padding:3vh;
     margin-right:7vh;
 }
 
-#menu-text > h2{
+.menu-text > h2{
     font-family:'Victor Serif';
     font-size:88px;
 }
@@ -486,13 +489,13 @@
 
 /*Proyecto 1 - Genus*/
 
-#project-text {
+.project-text {
     display: flex;
     flex-direction: column;
     width: 48%;
 }
 
-#project-chips {
+.project-chips {
     display: flex;
     flex-direction: row;
     font-size: 18px;
@@ -501,7 +504,7 @@
     justify-content: flex-end;
 }
 
-#project-chips > h6 {
+.project-chips > h6 {
     padding-top:1.5vh;
     padding-bottom:1.5vh;
     padding-left:2vh;
@@ -511,12 +514,12 @@
     margin-left:2vh;
 }
 
-#project-text > h2 {
+.project-text > h2 {
     font-size: 86px;
     font-family:'Victor Serif';
 }
 
-#project-title-border {
+.project-title-border {
     border-bottom: 1.5px solid;
     margin-bottom: 2vh;
 }
@@ -527,12 +530,12 @@
     flex-direction: column;
 }
 
-#project-text > h4 {
+.project-text > h4 {
     font-size: 17.5px;
     font-weight: 100;
 }
 
-#project-text > p {
+.project-text > p {
     font-size: 30px;
 }
 
