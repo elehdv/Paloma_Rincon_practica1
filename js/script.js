@@ -1,5 +1,6 @@
 let $document = $(document)
 $document.ready(function(){
+
     
     var typed2 = new Typed('#typed2', {
     strings: ['Hi! Im Paloma. I am a visual artist working in lens based still and moving image projects in a quirky style marked by bold colors and graphic compositions.'],
@@ -109,7 +110,33 @@ $document.ready(function(){
   
   });
 
+  $(".menu-text").on("click", function(){
+    //console.log($("#menu-photo-1").css("display"));
+  
+      let actual_chevron = $("#menu-open").css("visibility");
+    
+      if (actual_chevron === "visible") {
+        $("#menu-open").css("visibility", "hidden");
+              
+      } else {
+        $("#menu-open").css("visibility", "visible");
+      }
+  
+  });
 
+  $(".menu-text").on("click", function(){
+    //console.log($("#menu-photo-1").css("display"));
+  
+      let actual_chevron = $("#menu-open").css("opacity");
+    
+      if (actual_chevron === "1") {
+        $("#menu-open").css("opacity", "0");
+              
+      } else {
+        $("#menu-open").css("opacity", "1");
+      }
+  
+  });
 
 
 });

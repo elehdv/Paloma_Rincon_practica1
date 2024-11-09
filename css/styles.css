@@ -243,7 +243,13 @@
     flex-direction:row;
     cursor: pointer;
     text-decoration: none;
-    color: rgba(255, 255, 255);;
+    color: rgba(255, 255, 255, 0.75);
+    transition: 0.5s;
+}
+
+.menu-text:hover {
+    color: rgba(255, 255, 255);
+    transform: scale(1.02, 1.02);
 }
 
 .menu-text > h6{
@@ -257,6 +263,56 @@
     font-family:'Victor Serif';
     font-size:88px;
 }
+
+
+
+/*Animaciones menu
+#menu-photo-1 {
+    display: block;
+}
+
+#menu-photo-2 {
+    display: none;
+}
+
+#menu-photo-3 {
+    display: none;
+}
+
+#menu-photo-4 {
+    display: none;
+}
+
+#menu-photo-5 {
+    display: none;
+}
+
+#menu-text-home:hover {
+    color: rgb(41, 224, 17);
+}
+
+#menu-text-home:hover #menu-photo-1 {
+    display: none;
+}
+
+#menu-text-home:hover #menu-photo-2 {
+    display: block;
+}
+
+#menu-text-projects:hover {
+    color: rgb(224, 148, 17);
+}
+
+#menu-text-contact:hover {
+    color: rgb(88, 85, 235);
+}
+
+#menu-text-about:hover {
+    color: rgb(224, 17, 45);
+}
+*/
+
+
 
 /*Página introducción a proyectos*/
 
@@ -368,6 +424,7 @@
     padding-right: 2em;
     display:flex;
     flex-direction: column;
+    margin-bottom: 25vh;
 }
 
 /*Guía de Proyectos*/
@@ -1222,6 +1279,68 @@ footer .secciones li.list-inline-item a:hover {
 }
 
 /* Media Queries */
+@media (max-width: 1100px) and (min-width: 1001px) { 
+    .menu-text > h2{
+        font-size:75px;
+    }
+    
+
+}
+
+@media (max-width: 1000px) and (min-width: 901px){ 
+    .menu-text > h2{
+        font-size:65px;
+    }
+    
+
+}
+
+@media (max-width: 900px) and (min-width: 801px) { 
+    .menu-text > h2{
+        font-size:60px;
+    }
+    
+    .menu-text > h6{
+        margin-right:1vh;
+    }
+
+}
+
+@media (max-width: 800px) { 
+    #menu-photo { 
+        display: none;
+    }
+    
+    #menu-content {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 560px) { 
+    .menu-text > h2{
+        font-size:70px;
+    }
+
+    .menu-text > h6{
+        margin-right:1vh;
+    }
+}
+
+@media (max-width: 450px) { 
+    .menu-text > h2{
+        font-size:55px;
+    }
+
+}
+
+@media (max-width: 400px) { 
+    .menu-text > h2{
+        font-size:45px;
+    }
+
+}
+
 @media (min-width: 800px) and (max-width: 1020px) {
    
     .conference{
