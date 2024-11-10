@@ -142,6 +142,7 @@ $document.ready(function(){
   
   });
 
+
 });
 
 // Función que se ejecuta al hacer clic en la pantalla de carga
