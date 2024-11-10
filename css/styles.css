@@ -18,41 +18,6 @@
     padding: 0;
     font-family:'maison neue book'
 }
-/* Video inicio */
- /* Contenedor para la pantalla de carga */
- #loading-screen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 600;
-    text-align: center;
-    cursor: none;
-}
-
-/* Estilo del video de fondo para ocupar toda la pantalla */
-#video-background video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover; /* Hace que el video llene la pantalla y se recorte si es necesario */
-    z-index: 1;
-}
-#custom-cursor {
-    position: absolute;
-    color: rgb(0, 0, 0);
-    font-size: 6em;
-    font-family:'Victor Serif';
-    pointer-events: none; 
-    z-index: 900;
-    transition: transform 0.1s ease;
-}
 
 /*Home*/
 

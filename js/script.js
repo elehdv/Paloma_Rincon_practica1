@@ -7,14 +7,6 @@ $document.ready(function(){
 
   AOS.init();
 
-  const customCursor = document.getElementById("custom-cursor");
-  if (customCursor) {
-    // Solo ejecuta el evento de "mousemove" si existe el "custom-cursor"
-    document.addEventListener("mousemove", function(e) {
-      customCursor.style.left = e.pageX + 10 + "px";
-      customCursor.style.top = e.pageY + 10 + "px";
-    });
-  }
 
   $("#projects-guide > div > a").on("click", function(){
     //console.log($("#projects-guide-open").css("display"));
@@ -142,21 +134,13 @@ $document.ready(function(){
   
   });
 
+    // Inicializa la función de escritura automática
+    var typed2 = new Typed('#typed2', {
+      strings: ['Hi! Im Paloma. I am a visual artist working in lens based still and moving image projects in a quirky style marked by bold colors and graphic compositions.'],
+      typeSpeed: 20,
+      backSpeed: 15,
+      fadeOut: true
+    });
 
 });
 
-// Función que se ejecuta al hacer clic en la pantalla de carga
-function enterSite() {
-  document.getElementById("loading-screen").style.display = "none"; // Oculta la pantalla de carga
-  document.getElementById("main-content").style.display = "block";  // Muestra el contenido principal
-  document.body.style.overflow = "auto"; // Permite el desplazamiento
-  document.getElementById("custom-cursor").style.display = "none"; // Oculta el cursor personalizado
-
-  // Inicializa la función de escritura automática
-  var typed2 = new Typed('#typed2', {
-    strings: ['Hi! Im Paloma. I am a visual artist working in lens based still and moving image projects in a quirky style marked by bold colors and graphic compositions.'],
-    typeSpeed: 50,
-    backSpeed: 25,
-    fadeOut: true
-  });
-}
