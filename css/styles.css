@@ -18,6 +18,41 @@
     padding: 0;
     font-family:'maison neue book'
 }
+/* Video inicio */
+ /* Contenedor para la pantalla de carga */
+ #loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 600;
+    text-align: center;
+    cursor: none;
+}
+
+/* Estilo del video de fondo para ocupar toda la pantalla */
+#video-background video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* Hace que el video llene la pantalla y se recorte si es necesario */
+    z-index: 1;
+}
+#custom-cursor {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 6em;
+    font-family:'Victor Serif';
+    pointer-events: none; 
+    z-index: 900;
+    transition: transform 0.1s ease;
+}
 
 /*Home*/
 
@@ -133,7 +168,8 @@
 
 /*Menu abierto*/
 #menu-open {
-    z-index: 500;
+   
+    z-index: 300;
     width: 100%;
     background-color: rgb(24, 24, 24);
     overflow: hidden;
@@ -146,8 +182,8 @@
     left: 0;
     opacity: 0;
     visibility: hidden;
+    
 }
-
 
 #menu-open > ul > li > a > figure {
     padding-top:2vh;
@@ -1162,9 +1198,9 @@
 }
 
 .btn-outline-black:hover {
-    background-color: #FFB257;    
+    background-color: #FF5CE4;    
     color: white;                 
-    border-color: #FFB257;    
+    border-color: #FF5CE4;    
     transform: scale(1.1);
     transition: transform 0.6s ease;    
 }
@@ -1255,9 +1291,9 @@ footer .secciones li.list-inline-item a:hover {
 }
 
 .btn-outline-light:hover {
-    background-color: #FFB257;   
+    background-color: #FF5CE4;   
     color: white;                 
-    border-color: #FFB257;    
+    border-color: #FF5CE4;    
     transform: scale(1.1);
     transition: transform 0.6s ease;
 }
