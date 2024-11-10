@@ -75,7 +75,7 @@
     width:100%;
     flex-direction: row;
     justify-content: space-between;
-    z-index: 10;
+    z-index: 330;
     position: absolute;
     padding-left: 2em;
     padding-right: 2em;
@@ -91,7 +91,7 @@
 /*Menu*/
 #menu {
     position: fixed;
-    z-index: 1;
+    z-index: 300;
     width: 100%;
 
 }
@@ -505,14 +505,12 @@
 }
 
 #projects-guide-open a:hover { 
-    font-size: 65px;
-    font-family:'Victor Serif';
     color: rgba(24, 24, 24);
 }
 
 #projects-guide-open figure {
     display: flex;
-    width: 1.25vw;
+    width: 17px;
     cursor: pointer;
 }
 
@@ -590,6 +588,7 @@
 .project-text > h4 {
     font-size: 17.5px;
     font-weight: 100;
+    color:rgba(0, 0, 0, 0.492);
 }
 
 .project-text > p {
@@ -1279,6 +1278,185 @@ footer .secciones li.list-inline-item a:hover {
 }
 
 /* Media Queries */
+@media (max-width: 1400px) { 
+    #presentation > h1 {
+        font-size: 8vw;
+    }
+    
+    #presentation > div > .subtitle {
+        font-size: 1.5vw;
+        line-height: 0vw;
+    }
+
+}
+
+@media (max-width: 1200px) { 
+    #carouselExampleSlidesOnly {
+        height: 77vh;
+    }
+
+    #presentation > div {
+        width: 40%;
+        padding-bottom: 1.5em;
+    }
+
+    #projects-intro-title > h2 {
+        font-size: 55px;
+        width:40%;
+    }
+
+    #project-guide-explanation {
+        padding-top:15vh;
+    
+    }
+    
+    #project-guide-explanation > p {
+        font-size: 17px;
+        width: 25%;
+        padding-right:2vh;
+    }
+
+    .project-text > p {
+        font-size: 22px;
+    }
+    
+    .project-text > h2 {
+        font-size: 65px;
+    }
+    
+    .project-text > h4 {
+        font-size: 15px;
+    }
+    
+
+
+}
+
+@media (max-width: 1100px) { 
+    #presentation > div {
+        padding-bottom: 1em;
+    }
+
+    #presentation {
+        margin-top:1vh;
+    }
+
+    .carousel-inner{
+        width:120%;
+    }
+
+    #projects-intro-title > h2 {
+        font-size: 55px;
+        width:50%;
+    }
+
+
+    .modal-project-guide {
+        width: 70vw;
+        height:90vh;
+        border-radius: 0 0 70px 0;
+        margin-bottom: 2em;
+        margin-right: 2em;
+        padding: 1.5em 2em 5em 2em;
+        font-weight: 100;
+    }
+
+
+
+
+}
+
+@media (max-width: 1000px) { 
+
+
+    .carousel-inner{
+        width:150%;
+    }
+
+    .project-text > p {
+        font-size: 26px;
+    }
+
+    .project-text > h2 {
+        font-size: 80px;
+    }
+
+        
+    #project-1-1 {
+        flex-direction: column;
+    }
+
+    #project-2-1 {
+        flex-direction: column;
+    }
+
+    #project-3-1 {
+        flex-direction: column;
+    }
+
+    #project-4-1 {
+        flex-direction: column;
+    }
+
+    #project-5-1 {
+        flex-direction: column;
+    }
+
+    .project-text {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #project-1-1 > figure {
+        width: 45%;
+        align-self: flex-end;
+    }
+
+    #project-2-1 > figure {
+        align-self: flex-end;
+    }
+    
+    #project-3-1 > figure {
+        align-self: flex-end;
+    }
+    #project-4-1 > figure {
+        align-self: flex-end;
+    }
+    #project-5-1 > figure {
+        align-self: flex-end;
+    }
+
+    #project-1-1 > figure {
+        width: 65%;
+    }
+
+    #mexico-4-figure {
+        width: 80%;
+        margin-top:40px;
+        margin-right:20%;
+    }
+
+    #diet-4-figure {
+        width: 80%;
+        margin-right:15%;
+    }
+
+    #diet-5-figure {
+        width: 60%;
+        margin-top:50px;
+        margin-left:5%;
+    }
+
+    #project-5-1 > figure {
+        width: 70%;
+        margin-top:100px;
+        margin-right:3%;
+    }
+
+}
+
+
 @media (max-width: 1100px) and (min-width: 1001px) { 
     .menu-text > h2{
         font-size:75px;
@@ -1306,6 +1484,29 @@ footer .secciones li.list-inline-item a:hover {
 
 }
 
+@media (max-width: 900px) { 
+
+    #projects-intro-title > h2 {
+        font-size: 55px;
+        width:65%;
+    }
+
+    #project-guide-explanation > p {
+        font-size: 17px;
+        width: 30%;
+        padding-right:2vh;
+    }  
+
+    #genus-4-figure {
+        width: 60%;
+        margin-top:40px;
+        margin-right:25%;
+    }
+
+
+}
+
+
 @media (max-width: 800px) { 
     #menu-photo { 
         display: none;
@@ -1315,7 +1516,225 @@ footer .secciones li.list-inline-item a:hover {
         width: 100%;
     }
 
+    #presentation {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        align-items:center;
+        align-content: center;
+    }
+
+    #carouselExampleSlidesOnly {
+        height: 67vh;
+    }
+
+    #presentation > h1 {
+        width:100%;
+        font-size: 12vw;
+    }
+
+    #presentation > div {
+        width: 100%;
+    }
+    
+    #presentation > div > .subtitle {
+        font-size: 2.2vw;
+    }
+
+
+    #submenu-2 > h5 {
+        font-size: 17px;
+        padding-top: 2vh;
+        padding-bottom: 1vh;
+    }
+
+    .modal-project-guide {
+        width: 70vw;
+        height:80vh;
+        border-radius: 0 0 70px 0;
+        margin-bottom: 2em;
+        margin-right: 2em;
+        padding: 1.5em 2em 5em 2em;
+        font-weight: 100;
+    }
+
+    #projects-guide-open a { 
+        font-size: 55px;
+    }
+
+    #Synesthesia-2-figure {
+        width: 55%;
+        margin-top:80px;
+        margin-left:5%;
+    }
+
+    #flow-4-figure {
+        width: 75%;
+        margin-top:80px;
+        margin-right:30%;
+    }
+    
+
 }
+
+@media (max-width: 700px) { 
+    #carouselExampleSlidesOnly {
+        height: 70vh;
+    }
+
+    .carousel-inner{
+        width:180%;
+    }
+
+    #projects-intro-title > h2 {
+        font-size: 55px;
+        width:80%;
+    }
+
+    #project-guide-explanation > p {
+        font-size: 17px;
+        width: 50%;
+        padding-right:2vh;
+    }   
+
+    #mexico-3-figure {
+        width: 50%;
+        margin-top:150px;
+        margin-left:5%;
+    }
+
+
+    .project-text > p {
+        font-size: 22px;
+    }
+
+    .project-text > h2 {
+        font-size: 70px;
+    }
+
+    .project-text > h4 {
+        font-size: 17px;
+    }
+
+    #diet-2-figure {
+        margin-top:200px;
+    }
+
+    #flow-2-figure {
+        margin-top:200px;
+    }
+
+    #flow-3-figure {
+        width: 55%;
+        margin-top:60px;
+    }
+
+}
+
+@media (max-width: 650px) { 
+    .modal-project-guide {
+        width: 80vw;
+        height:80vh;
+        border-radius: 0 0 50px 0;
+        margin-bottom: 1em;
+        margin-right: 1em;
+        padding: 1.5em 2em 5em 2em;
+        font-weight: 100;
+    }
+
+    #projects-guide-open a { 
+        font-size: 40px;
+    }
+
+    #projects-guide-open-title > h5{ 
+        font-size:16px;
+    }
+}
+
+@media (max-width: 600px) { 
+    #carouselExampleSlidesOnly {
+        height: 70vh;
+    }
+
+    .carousel-inner{
+        width:200%;
+    }
+
+    #presentation > div > .subtitle {
+        font-size: 2.5vw;
+    }
+
+    #PalomaRinconHome {
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+
+    .project-text {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    #projects {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+
+    #projects-intro-title > h2 {
+        font-size: 45px;
+        width:90%;
+    }
+
+    #projects-guide > div {
+        width: 113px;
+        height:113px;
+    }
+
+    #projects-guide > div > a > h5 { 
+        font-size: 16px;
+        padding-top:12px;
+    }
+
+
+
+    .project-chips > h6 {
+        padding-top:1.5vh;
+        padding-bottom:1.5vh;
+        padding-left:2vh;
+        padding-right:2vh;
+        border-radius: 100px;
+        margin-left:2vh;
+    }
+    
+    
+    .project-text > p {
+        font-size: 18px;
+    }
+    
+    .project-text > h2 {
+        font-size: 55px;
+    }
+    
+    .project-text > h4 {
+        font-size: 15px;
+    }
+
+    #project-2-1 > figure {
+        width: 45%;
+        margin-top:60px;
+        margin-right:8%;
+    }
+
+    #mexico-5-figure {
+        width: 75%;
+    }
+
+    #project-4-1 > figure {
+        width: 60%;
+    }
+
+}
+
 
 @media (max-width: 560px) { 
     .menu-text > h2{
@@ -1325,12 +1744,190 @@ footer .secciones li.list-inline-item a:hover {
     .menu-text > h6{
         margin-right:1vh;
     }
+
+    #presentation > div > .subtitle {
+        font-size: 3.2vw;
+    }
+
 }
+
+@media (max-width: 500px) { 
+    #submenu-2 {
+        display: none;
+    }
+
+    .carousel-inner{
+        width:270%;
+    }
+
+    #project-1-2 {
+        flex-direction: column;
+    }
+
+    #project-2-2 {
+        flex-direction: column;
+    }
+
+    #project-4-2 {
+        flex-direction: column;
+    }
+
+    #project-5-2 {
+        flex-direction: column;
+    }
+
+    #project-5-4 {
+        flex-direction: column;
+    }
+
+    #project-3-2 {
+        flex-direction: column;
+    }
+
+    #genus-3-figure {
+        width: 55%;
+        margin-top: 40px;
+        margin-left: 0%;
+        align-self: flex-end;
+    }
+
+    #mexico-2-figure {
+        width: 55%;
+    }
+
+    #mexico-3-figure {
+        width: 80%;
+        margin-top: 50px;
+        margin-left: 5%;
+        align-self: flex-end;
+    }
+
+    #diet-2-figure {
+        margin-top: 40px;
+        width: 60%;
+        align-self: flex-end;
+        margin-left: 0%;
+    }
+
+    #diet-3-figure {
+        width: 85%;
+        margin-top: 40px;
+    }
+
+    #diet-5-figure {
+        margin-left: 35%;
+        align-self: flex-end;
+    }
+
+    #project-5-1 > figure {
+        width: 80%;
+    }
+
+    #Synesthesia-3-figure {
+        width: 75%;
+        margin-top: 50px;
+        align-self: flex-end;
+    }
+
+    #Synesthesia-5-figure {
+        width: 60%;
+    }
+
+    #Synesthesia-6-figure {
+        width: 85%;
+        margin-top: 50px;
+        align-self: flex-end;
+    }
+
+    #project-3-1 > figure {
+        width: 70%;
+        margin-top: 40px;
+    }
+
+    #flow-2-figure {
+        margin-top: 30px;
+        align-self: flex-end;
+        width: 70%;
+    }
+
+    #flow-5-figure {
+        width: 95%;
+    }
+
+    #project-2 {
+        padding-top: 0vh;
+    }
+
+    #project-3 {
+        padding-top: 0vh;
+    }
+
+    #project-4 {
+        padding-top: 0vh;
+    }
+
+    #project-5 {
+        padding-top: 0vh;
+    }
+
+
+
+
+
+}
+
 
 @media (max-width: 450px) { 
     .menu-text > h2{
         font-size:55px;
     }
+
+    #project-guide-explanation > p {
+        font-size: 15px;
+        width: 70%;
+        padding-right:2vh;
+    } 
+
+    #projects-intro-title > h2 {
+        font-size: 30px;
+        width:100%;
+    }
+
+    #projects-guide > div {
+        width: 95px;
+        height:95px;
+        margin-bottom: 1.25em;
+        margin-right: 1.25em;
+    }
+
+    #projects-guide > div > a > h5 { 
+        font-size: 14px;
+        padding-top:12px;
+    }
+
+
+    .project-chips > h6 {
+        padding-top:1.2vh;
+        padding-bottom:1.2vh;
+        padding-left:1.7vh;
+        padding-right:1.7vh;
+        margin-left:1.5vh;
+        font-size: 14px;
+    }
+    
+    
+    .project-text > p {
+        font-size: 18px;
+    }
+    
+    .project-text > h2 {
+        font-size: 40px;
+    }
+    
+    .project-text > h4 {
+        font-size: 15px;
+    }
+ 
 
 }
 
@@ -1338,6 +1935,68 @@ footer .secciones li.list-inline-item a:hover {
     .menu-text > h2{
         font-size:45px;
     }
+
+    .carousel-inner{
+        width:350%;
+    }
+
+    #project-guide-explanation > figure {
+        width: 6vw;
+        height: fit-content;
+    }
+
+    #project-guide-explanation > figure > img {
+        width: 100%;
+        height: 100%
+    }
+
+    #project-guide-explanation > p {
+        font-size: 13px;
+    } 
+
+    .modal-project-guide {
+        width: 80vw;
+        height:60vh;
+        border-radius: 0 0 70px 0;
+        margin-bottom: 1em;
+        margin-right: 1em;
+        padding: 0.75em 1em 2.5em 1em;
+        font-weight: 100;
+    }
+
+    #projects-guide-open a { 
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width: 350px) { 
+    #presentation > div > .subtitle {
+        font-size: 3.7vw;
+    }
+
+    .project-chips > h6 {
+        padding-top:1.2vh;
+        padding-bottom:1.2vh;
+        padding-left:1.7vh;
+        padding-right:1.7vh;
+        margin-left:1.5vh;
+        font-size: 14px;
+    }
+    
+    
+    .project-text > p {
+        font-size: 17px;
+    }
+    
+    .project-text > h2 {
+        font-size: 35px;
+    }
+    
+    .project-text > h4 {
+        font-size: 13px;
+    }
+    
 
 }
 
